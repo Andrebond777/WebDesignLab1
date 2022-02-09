@@ -2,5 +2,5 @@
 Лабораторна робота №1. 
 Розробка статичного інтерфейсу Web-додатка. 
 Загальне завдання: розробити статичні Web-сторінки додатку та перевірити коректне їх відображення на екранах різного розміру.
-Посилання на звіт: https://docs.google.com/document/d/1qYinbNJL7TC3jSvw8WaOqzKDLZjo7CcuXfA_OF2rC9Y/edit?usp=sharing
+Посилання на звіт: https://docs.google.com/document/d/1qYinbNJL7TC3jSvw8WaOqzKDLZjo7CcuXfA_OF2rC9Y/edit?usp=sharing                                            Також хочу зазначити, що це частина сайту, який я робив. Тому міг забути прибрати щось.
 
