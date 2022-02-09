@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Y'fn</title>
+    <meta name="description" content="Інтернет-магазин Brand_Y'fn пропонує чоловічий, жіночий та дитячий одяг. Brand_Y'fn для тих, хто шукає зручний комфортний, якісний та оригінальний одяг для себе чи для інших членів своєї сім'ї. Ми пропонуємо цікаві поєднання в одному стилі для всієї сім' ї!">
+    <meta name="author" content="andrebond777">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head><!--/head-->
+
+<body>
+    <header id="header">
+        <!--header-->
+        <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons">
+                            <ul class="nav">
+                                <li><a href="tel:+380976443016"><i class="fa fa-phone"></i> +38 097 644 30 16</a></li>
+                                <li><a href="tel:+380634370449"><i class="fa fa-phone"></i> +38 063 437 04 49</a></li>
+                                <li><a href="https://instagram.com/brand_yfn?igshid=vo3c7uzv2uze" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons pull-right">
+                            <ul class="nav">
+                                <li><a href="https://goo.gl/maps/TqMvW5ubCA2PJgZs7" target="_blank"><i class="fa fa-map-marker"></i> Ірпінь, вул. Українська, 48а</a></li>
+                                <li><a href="mailto: Brand.yfn.shop@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Brand.yfn.shop@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+
+        <div class="header-middle">
+            <!--header-middle-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="logo pull-left">
+                            <a href="index.html"><img src="images/home/logo.png" alt="logo" height="60" /></a>
+                        </div>
+                        <div class="btn-group pull-right">
+
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="shop-menu pull-right">
+                            <ul class="nav">
+                                <li style="color:white;" class="mr-5">                                      
+                                    <a href="login.html"><i class="fa fa-sign-in"></i>&nbsp;Вхід</a>     
+                                </a>
+                                </li>
+                                <li style="color:white;" class="mr-5">
+                                    <a href="register.html"><i class="fa fa-registered"></i>&nbsp;Реєстрація</a>   
+                                    </a>
+                                </li>
+                                <li style="color:white;" class="mr-5">                                      
+                                    <a href="users.html"><i class="fa fa-table"></i>&nbsp;Список користувачів</a>     
+                                </a>
+                                </li>
+                                <li style="color:white;" class="mr-5">                                      
+                                    <a href="about.html"><i class="fa fa-info"></i>&nbsp;Про додаток</a>     
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-middle-->
+
+        <div class="header-bottom">
+            <!--header-bottom-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="mainmenu pull-left">
+                            <ul class="nav navbar-nav collapse navbar-collapse">
+                                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                                <li><a asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-categoryName="Жінки">Жінки</a></li>
+                                <li><a asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-categoryName="Чоловіки">Чоловіки</a></li>
+                                <li><a asp-area="Customer" asp-controller="Home" asp-action="Index" asp-route-categoryName="Діти">Діти</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 search_form">
+                        <form asp-area="Customer" asp-controller="Home" asp-action="Index">
+                            <p>
+                                <input type="text" placeholder="Пошук" name="SearchString" class="mb-0" />
+                                <button class="btn btn-outline-secondary border-start-0 border rounded-pill ms-n3" type="submit">
+                                    <i class=" fa fa-search"></i>
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header-bottom-->
+    </header><!--/header-->
+
+    <div class="container">
+        <main role="main" class="pb-3">           
+            <div class="py-4 registration">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="row form-group">
+                    <div class="col-8 offset-2">
+                        <div class="card">
+                            <div class="card-body px-lg-5 pt-4">
+                                <form autocomplete="off" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                                    <h3 class="col-12 text-success text-center py-4">                                        
+                                <strong>Реєстрація</strong>
+                                    </h3>
+                                    <hr />
+                                    <div class="py-2">
+                                        <input asp-for="Input.Name" placeholder="Ім'я та прізвище" class="form-control" />
+                                        <span asp-validation-for="Input.Name" class="text-danger"></span>
+                                    </div>
+                                    <div class="py-2 input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"></span>
+                                        </div>
+                                        <input asp-for="Input.PhoneNumber" type="text" placeholder="Номер телефону" class="form-control" />
+                                        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                                    </div>
+                                    <div class="py-2">
+                                        <input asp-for="Input.Email" type="email" placeholder="Email" class="form-control" />
+                                        <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-row py-2">
+                                        <div class="col">
+                                            <input asp-for="Input.Password" type="password" placeholder="Пароль" class="form-control" />
+                                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                        </div>
+                                        <div class="col">
+                                            <input asp-for="Input.ConfirmPassword" type="password" placeholder="Підтвердити Пароль" class="form-control" />
+                                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="py-2">
+                                        <button type="submit" class="btn btn-success form-control">Зареєструватись</button>
+                                    </div>
+                                    </form>
+            
+                            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                                <p>
+                                    Натискаючи <em>Зареєструватись</em>, Ви погоджуєтесь з нашими <a href="" target="_blank"> умовами </a>
+                                </p>
+                                <hr />
+            
+                                <div class="row">
+                                    <p>
+                                        
+                                        <div class="col-6">
+                                            
+                                                <button type="submit" class="btn btn-block facebook-btn form-control"
+                                                        name="provider" value="@provider.Name"
+                                                        title="Log in using your @provider.DisplayName account">
+                                                    <i class="fab fa-facebook-square"></i> Facebook
+                                                </button>
+                                            
+                                                    <button type="submit" class="btn btn-block google-btn form-control"
+                                                            name="provider" value="@provider.Name"
+                                                            title="Log in using your @provider.DisplayName account">
+                                                        <i class="fab fa-google"></i> Google
+                                                    </button>
+
+                                        </div>
+                                            
+                                        
+                                    </p>
+                                </div>
+                            </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer id="footer">
+
+        <div class="">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+            <div class="header_top">
+            <!--header_top-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons">
+                            <ul class="nav nav-pills">
+                                <li><a href="tel:+380976443016"><i class="fa fa-phone"></i> +38 097 644 30 16</a></li>
+                                <li><a href="tel:+380634370449"><i class="fa fa-phone"></i> +38 063 437 04 49</a></li>
+                                <li><a href="https://instagram.com/brand_yfn?igshid=vo3c7uzv2uze" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contactinfo social-icons pull-right">
+                            <ul class="nav nav-pills">
+                                <li><a href="https://goo.gl/maps/TqMvW5ubCA2PJgZs7" target="_blank"><i class="fa fa-map-marker"></i> Ірпінь, вул. Українська, 48а</a></li>
+                                <li><a href="mailto: Brand.yfn.shop@gmail.com" target="_blank"><i class="fa fa-envelope"></i> Brand.yfn.shop@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/header_top-->
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                    <p class="">Copyright © 2021 Brand Y'fn. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer><!--/Footer-->
+
+    <script src="https://kit.fontawesome.com/e19c476714.js"></script>
+
+</body>
+</html>
